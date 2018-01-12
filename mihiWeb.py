@@ -22,6 +22,11 @@ def index():
     return render_template('index.html')
 
 
+@main.route('/QA')
+def qAndA():
+    return render_template('QandA.html')
+
+
 @app.route('/user/<name>')
 def user(name):
     return render_template('user.html', name=name)

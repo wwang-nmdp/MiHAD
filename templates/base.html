@@ -21,24 +21,17 @@
             </button>
             <a class="navbar-brand" href="{{ url_for('main.index') }}">MiHAD</a>
         </div>
-        <div class="navbar-collapse collapse">
+    </div>
+    <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a href="{{ url_for('main.index') }}">Home</a></li>
                 <li><a href="{{ url_for('main.index') }}">Search</a></li>
                 <li><a href="{{ url_for('main.index') }}">Peptide mapping</a></li>
                 <li><a href="{{ url_for('main.index') }}">Peptide blast</a></li>
-                <li><a href="{{ url_for('main.index') }}">Q&A</a></li>
+                <li><a href="{{ url_for('main.qAndA') }}">Q&A</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <ul class="dropdown-menu">
 
-                    </ul>
-                </li>
-
-            </ul>
         </div>
-    </div>
 </div>
 {% endblock %}
 
