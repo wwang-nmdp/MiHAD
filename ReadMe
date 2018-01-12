@@ -1,2 +1,7 @@
 Start venv
 source venv/bin/activate
+
+The MiHAD is an immunoinformatics database of minor histocompatibility antigens. It includes comprehensive information about experimentally validated MiHAs and also includes the predicted MiHAs. Initially, we developed a pipeline to extract the differential missense mutations from 205 donor-recipient paired whole genome sequencing data, then predicted their binding affinity with HLA molecules.
+
+MiHAD overview:
+![alt text](https://github.com/wwang-nmdp/MiHAD/blob/master/images/DesignOfMiHAD.png)
