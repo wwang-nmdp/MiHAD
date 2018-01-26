@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Home page{% endblock %}
+
+{% block page_content %}
+<div class="container">
+  <h2>Known MiHAIP Table</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>MiHA_ID</th>
+        <th>Pep</th>
+        <th>PepVar1</th>
+          <th>PepVar2</th>
+          <th>Section</th>
+          <th>Polymorphic</th>
+          <th>HLA_allele</th>
+          <th>Chr</th>
+          <th>Pos</th>
+          <th>SNP_ID</th>
+          <th>Alts</th>
+          <th>AltFreq1</th>
+          <th>AltFreq2</th>
+          <th>FreqDiff</th>
+          <th>PepVar1_Score</th>
+          <th>PepVar1_%Rank</th>
+          <th>PepVar2_Score</th>
+          <th>PepVar1_%Rank</th>
+          <th>ScoreDiff</th>
+          <th>Gene</th>
+          <th>ENSG</th>
+          <th>Tau_value</th>
+          <th>Main_Tissue</th>
+          <th>Hematopoietic_Tissue</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for item in data %}
+     <tr>
+        {% for cell in item %}
+            <td>{{cell}}</td>
+        {% endfor %}
+     </tr>
+    {% endfor %}
+
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}

@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block navbar %}
-<div class="navbar navbar-inverse" role="navigation">
+<div class="navbar navbar-light" style="background-color: #255096;" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -21,13 +21,14 @@
             </button>
 
             <h1 style="color:White;" >MiHAD</h1>
-            <h3 style="color:White;" >Minor Histocompatibility Antigen Database</h3>
+            <h3 style="color:white;" >Minor Histocompatibility Antigen Database</h3>
         </div>
     </div>
     <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav" >
                 <li><a href="{{ url_for('main.index') }}">Home</a></li>
-                <li><a href="{{ url_for('main.index') }}">Search</a></li>
+                <li><a href="{{ url_for('main.pre_miha') }}">Predicted MiHA</a></li>
+                <li><a href="{{ url_for('main.known_miha') }}">Known MiHA</a></li>
                 <li><a href="{{ url_for('main.index') }}">Peptide mapping</a></li>
                 <li><a href="{{ url_for('main.index') }}">Peptide blast</a></li>
                 <li><a href="{{ url_for('main.index') }}">Data Submission</a></li>

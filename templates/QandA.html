@@ -5,5 +5,24 @@
 {% block page_content %}
 <div class="page-header">
     <h1>Q&A</h1>
+    <h4> </h4>
+    <h4> </h4>
+    <h4>1. What is MiHA?</h4>
+    <p>MiHA is the acronym for Minor Histocompatibility Antigens,  which are small peptides that are found on the cell surface in association with class I or class II major histocompatibility complex (MHC) molecules. Minor histocompatibility antigens correspond to polymorphic structures and are therefore instrumental in the molecular definition of self to the immune system. Single amino acid differences are detectable by T cells that can become immunoreactive and cause GVHD in the context of HLA-matched allogeneic stem cell transplantation.</p>
+    <h4>2. What is MiHAIP? </h4>
+    <p>MiHAIP is abbreviation of Minor Histocompatibility Antigens identification pipeline, which integrates diverse biological data  and multiple tools to predict the potential MiHAs by comparing the variants between transplanted donor and recipient. It’s free accessible through GitHub: https://github.com/nmdp-bioinformatics/MiHAIP</p>
+    <h4>3. How MiHAIP works? </h4>
+    <p> For predicting the MiHAs from WGS data, it requires two vcf files as input. For example, one vcf file from donor and another vcf from recipient. But you can use any two vcf files to identify the differentiations encoded MiHAs through MiHAIP. For more details, Please visit the readme form GitHub: https://github.com/nmdp-bioinformatics/MiHAIP</p>
+    <h4>4. What is epitope?</h4>
+    <p>An epitope is the part of a macromolecule that is recognized by the immune system, specifically by antibodies, B cells, or cytotoxic T cells. Although usually epitopes are usually thought to be derived from nonself proteins, sequences derived from the host that can be recognized are also classified as epitopes.
+    <p>Most epitopes recognized by antibodies or B cells can be thought of as three-dimensional surface features of an antigen molecule; these features fit precisely and thus bind to antibodies. The part of an antibody that recognizes the epitope is called a paratope. Exceptions are linear epitopes, which are determined by the amino acid sequence (the primary structure) rather than by the tertiary structure of a protein.</p>
+    <p>T cell epitopes are presented on the surface of an antigen-presenting cell, where they are bound to MHC molecules. T cell epitopes presented by MHC class I molecules are typically peptides between 8 and 11 amino acid in lengths, while MHC class II molecules present longer peptides, and non-classical MHC molecules also present non-peptidic epitopes such as glycolipids.</p>
+    <p>Epitopes can be mapped using protein microarrays, and with the ELISPOT or ELISA techniques.</p>
+    <p>Genetic sequences coding for epitopes that are recognised by common antibodies can be fused to genes, thus aiding further molecular characterization of the gene product. Common epitopes used for this purpose are c-myc, HA, FLAG, V5.</p>
+    <p>Interestingly, epitopes are sometimes cross-reactive. This property is exploited by the immune system in regulation by Anti-idiotypic antibodies (originally proposed by Nobel laureate Niels Kaj Jerne). If an antibody binds to an antigen's epitope, the paratope could become the epitope for another antibody that will then bind to it. If this second antibody is of IgM class, its binding can upregulate the immune response; if the second antibody is of IgG class, its binding can downregulate the immune response.</p>
+    <p>Intensive research is currently taking place to design reliable tools that will predict epitopes on proteins.</p>
+    <h4>5. Which genome version MiHAD used? </h4>
+    <p>The MiHAD is use GRCh build 38, Genome Reference Consortium Human Reference 38, as reference </p>
+
 </div>
 {% endblock %}
